@@ -1,0 +1,80 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    
+    <style name="EditTextlogin">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:backgroundTint">@color/textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:editTextColor">#ffff</item>
+    </style>
+
+    <style name="Button1" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#ffff</item>
+        <item name="android:minWidth">88dp</item>
+        <item name="android:minHeight">55dp</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:background">@drawable/primary</item>
+    </style>
+    <style name="TextTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">100dp</item>
+        <item name="android:textColor">#00695C</item>
+    </style>
+    <style name="TextTitle.Name">
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+    <style name="TextTitle.MeetingCreate" parent="TextTitle">
+        <item name="android:layout_marginTop">40dp</item>
+    </style>
+    <style name="TextDescription">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:gravity">center</item>
+
+
+    </style>
+
+    <style name="MyMaterialTheme.Toolbar.Text" parent="MyMaterialTheme">
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+    <style name="MyMaterialTheme.Department" parent="MyMaterialTheme">
+        <item name="colorAccent">#fff</item>
+    </style>
+    <style name="MyMaterialTheme.Toolbar.Text.Location" parent="MyMaterialTheme.Toolbar.Text">
+        <item name="android:textStyle">normal|italic</item>
+    </style>
+
+
+</resources>

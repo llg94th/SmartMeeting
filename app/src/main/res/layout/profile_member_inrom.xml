@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/content_toolbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="true"
+            android:minHeight="170dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:src="@drawable/anh_the__dep" />
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/MyMaterialTheme.Toolbar.Text"
+                android:layout_marginTop="16dp"
+                android:text="Phi Mầu" />
+
+            <TextView
+                android:id="@+id/tvDepartment"
+                style="@style/MyMaterialTheme.Toolbar.Text.Location"
+                android:text="Chức vụ:Nhân viên" />
+
+            <TextView
+                android:id="@+id/tvPosition"
+                style="@style/MyMaterialTheme.Toolbar.Text.Location"
+                android:text="Phòng:Thiết kế" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                style="@style/MyMaterialTheme.Toolbar.Text.Location"
+                android:paddingBottom="16dp"
+                android:text="Email:santafe9xyb@gmail.com" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/appbar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="Mới tham gia"
+                    android:textSize="23sp"
+                    android:textStyle="italic" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#9E9E9E">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="72dp">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvMeeting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcvAvatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="72dp"
+                    android:layout_gravity="center"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="25dp"
+            android:id="@+id/coordinatorLayout"
+            android:text="Mất kết nối"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_height="match_parent" />
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

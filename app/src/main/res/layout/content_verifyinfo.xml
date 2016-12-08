@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ViewFlipper
+        android:id="@+id/viewFliper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextTitle"
+                android:id="@+id/tvName1"
+                android:text="Tên Hiển thị" />
+
+            <TextView
+                style="@style/TextDescription"
+                android:text="Khuyên cáo nên sử dụng tên thật" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mau Hong Phi"
+                    android:textColorHint="#424242"
+                    android:textSize="20dp" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextTitle"
+                android:id="@+id/tvEmail1"
+                android:text="Địa chỉ Email" />
+
+            <TextView
+                style="@style/TextDescription"
+                android:text="Khuyến khích sử dụng đi chỉ email của công ty" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <EditText
+                    android:id="@+id/etMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="santafe09xyb@gmail.com"
+                    android:textColorHint="#424242"
+                    android:textSize="20dp" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="@style/TextTitle"
+                android:id="@+id/tvImage1"
+
+                android:text="Ảnh đại diện"/>
+            <TextView
+                style="@style/TextDescription"
+                android:text="Cập nhật ảnh đai diện?"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="128dp"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:src="@drawable/anh_the__dep"
+                android:layout_height="128dp"/>
+            <Button
+                android:id="@+id/btnTakenew"
+                android:layout_width="match_parent"
+                style="@style/Button1"
+                android:text="Chụp ảnh mới"
+                android:layout_gravity="center"
+                android:layout_height="36dp" />
+            <Button
+                android:id="@+id/btnTakeGadenlly"
+                android:layout_width="match_parent"
+                style="@style/Button1"
+                android:text="Chọn từ bộ sưu tập"
+                android:layout_gravity="center"
+                android:layout_height="36dp" />
+        </LinearLayout>
+    </ViewFlipper>
+</LinearLayout>

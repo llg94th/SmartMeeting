@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_meeting_detail"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow android:layout_margin="5dp"
+            android:weightSum="100">
+
+            <ImageView
+                android:layout_weight="10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_clock" />
+
+            <TextView
+                android:layout_weight="40"
+                android:id="@+id/tvMeetingTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/LOADING"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_weight="10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_date" />
+
+            <TextView
+                android:layout_weight="40"
+                android:id="@+id/tvMeetingDate"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/LOADING"
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="5dp"
+            android:weightSum="100">
+
+            <ImageView
+                android:layout_weight="10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location" />
+
+            <TextView
+                android:layout_weight="40"
+                android:id="@+id/tvMeetingPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/LOADING"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_weight="10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star" />
+
+            <TextView
+                android:layout_weight="40"
+                android:id="@+id/tvMeetingRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/LOADING"
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="100"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:layout_weight="10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_admin" />
+
+            <TextView
+                android:layout_weight="90"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAlignment="center"
+                android:id="@+id/tvMeetingCreater"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_span="3"
+                android:paddingLeft="5dp"
+                android:text="@string/LOADING"
+                android:textSize="15sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="10"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_content" />
+            <TextView
+                android:layout_weight="9"
+                android:id="@+id/tvMeetingDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_span="3"
+                android:paddingLeft="5dp"
+                android:text="@string/LOADING"
+                android:textSize="15sp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

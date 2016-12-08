@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SmartMeeting</string>
+    <string name="action_settings">Settings</string>
+    <string name="loading">Loading...</string>
+    <string name="gcm_defaultSenderId">351623057008</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="view_list_mem">Xem danh sách nhân viên</string>
+    <string name="next">Tiếp</string>
+    <string name="previous">Quay lại</string>
+    <string name="place">Địa điểm họp</string>
+    <string name="meeting_detail">Chi tiết cuộc họp</string>
+</resources>
